@@ -1,35 +1,40 @@
-function divide() {
-    var firstName = num1.value
-    var secondName = num2.value
-    var quotient = firstName / secondName
-    var answerGangan = " The Answer is " + quotient
-    console.log(answerGangan);
-    showAnswer.innerHTML = answerGangan
-}
 function addition() {
-    var firstName = Number(num1.value) 
-    var secondName =Number(num2.value) 
-    var sum = firstName + secondName
-    var answerGangan = " The Answer is " + sum
-    console.log(answerGangan);
-    showAnswer.innerHTML = answerGangan
-
+    var firstNumber = Number(number1.value) 
+    var secondNumber = Number(number2.value) 
+    var sum = firstNumber + secondNumber
+    // console.log(sum);
+    var showResult = " The Sum is " + sum
+    showAnswer.innerHTML = showResult
+    
 }
+
 function subtraction() {
-    var firstName = num1.value
-    var secondName = num2.value
-    var subtract = firstName - secondName
-    var answerGangan = " The Answer is " + subtract
-    console.log(answerGangan);
-    showAnswer.innerHTML = answerGangan
-
+    var firstNumber = Number(number1.value) 
+    var secondNumber = Number(number2.value) 
+    var subtract = firstNumber - secondNumber
+    // console.log(sum);
+    var showResult = " The Subtraction is " + subtract
+    showAnswer.innerHTML = showResult
+    
 }
-function multiplication() {
-    var firstName = num1.value
-    var secondName = num2.value
-    var multiple = firstName * secondName
-    var answerGangan = " The Answer is " + multiple
-    console.log(answerGangan);
-    showAnswer.innerHTML = answerGangan
 
+function division() {
+    var firstNumber = Number(number1.value) 
+    var secondNumber = Number(number2.value) 
+    var divide = firstNumber / secondNumber
+    // console.log(sum);
+    var showResult = " The Division is " + divide
+    showAnswer.innerHTML = showResult
+    
+}
+
+
+function multiplication() {
+    var firstNumber = Number(number1.value) 
+    var secondNumber = Number(number2.value) 
+    var multiple = firstNumber * secondNumber
+    // console.log(sum);
+    var showResult = " The Multiplication is " + multiple
+    showAnswer.innerHTML = showResult
+    
 }
