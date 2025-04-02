@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redo</title>
+</head>
+<body>
+    <h1>Floral Calculator</h1>
+    <input type="number" id="number1" placeholder="Enter Your First Number">
+    <input type="number" id="number2" placeholder="Enter Your Second Number">
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+    <button onclick="division()">/</button>
+    <button onclick="multiplication()">*</button>
+    <div id="showAnswer">Your Answer Will show here</div>
+
+
+    <script>
+        function addition() {
+            var firstNumber = Number(number1.value) 
+            var secondNumber = Number(number2.value) 
+            var sum = firstNumber + secondNumber
+            // console.log(sum);
+            var showResult = " The Sum is " + sum
+            showAnswer.innerHTML = showResult
+            
+        }
+
+        function subtraction() {
+            var firstNumber = Number(number1.value) 
+            var secondNumber = Number(number2.value) 
+            var subtract = firstNumber - secondNumber
+            // console.log(sum);
+            var showResult = " The Subtraction is " + subtract
+            showAnswer.innerHTML = showResult
+            
+        }
+
+        function division() {
+            var firstNumber = Number(number1.value) 
+            var secondNumber = Number(number2.value) 
+            var divide = firstNumber / secondNumber
+            // console.log(sum);
+            var showResult = " The Division is " + divide
+            showAnswer.innerHTML = showResult
+            
+        }
+
+
+        function multiplication() {
+            var firstNumber = Number(number1.value) 
+            var secondNumber = Number(number2.value) 
+            var multiple = firstNumber * secondNumber
+            // console.log(sum);
+            var showResult = " The Multiplication is " + multiple
+            showAnswer.innerHTML = showResult
+            
+        }
+    </script>
+</body>
+</html>
