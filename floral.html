@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Calculator</title>
+    <style>
+        /* Background Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Calculator Container */
+        .calculator {
+            background: #fff;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+            width: 320px;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #6a11cb;
+        }
+
+        /* Input Fields */
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #6a11cb;
+            border-radius: 8px;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #2575fc;
+        }
+
+        /* Buttons */
+        button {
+            padding: 12px 18px;
+            margin: 5px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background: #6a11cb;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #2575fc;
+            transform: scale(1.05);
+        }
+
+        /* Display Answer */
+        #showAnswer {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            background: #f3f3f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Floral Calculator</h1>
+        <input type="number" id="number1" placeholder="Enter Your First Number">
+        <input type="number" id="number2" placeholder="Enter Your Second Number">
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="division()">/</button>
+        <button onclick="multiplication()">*</button>
+        <div id="showAnswer">Your Answer Will Show Here</div>
+    </div>
+
+    <script>
+        function addition() {
+            var firstNumber = Number(document.getElementById("number1").value);
+            var secondNumber = Number(document.getElementById("number2").value);
+            var sum = firstNumber + secondNumber;
+            document.getElementById("showAnswer").innerHTML = "The Sum is " + sum;
+        }
+
+        function subtraction() {
+            var firstNumber = Number(document.getElementById("number1").value);
+            var secondNumber = Number(document.getElementById("number2").value);
+            var subtract = firstNumber - secondNumber;
+            document.getElementById("showAnswer").innerHTML = "The Subtraction is " + subtract;
+        }
+
+        function division() {
+            var firstNumber = Number(document.getElementById("number1").value);
+            var secondNumber = Number(document.getElementById("number2").value);
+            var divide = firstNumber / secondNumber;
+            document.getElementById("showAnswer").innerHTML = "The Division is " + divide;
+        }
+
+        function multiplication() {
+            var firstNumber = Number(document.getElementById("number1").value);
+            var secondNumber = Number(document.getElementById("number2").value);
+            var multiple = firstNumber * secondNumber;
+            document.getElementById("showAnswer").innerHTML = "The Multiplication is " + multiple;
+        }
+    </script>
+</body>
+</html>
