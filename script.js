@@ -1,5 +1,5 @@
 function addition() {
-    if(number1.value =="" && number2.value ==""){
+    if(number1.value =="" || number2.value ==""){
         showAnswer.innerHTML = "Input a Number"
      } else{
         var firstNumber = Number(number1.value) 
@@ -12,7 +12,7 @@ function addition() {
 }
 
 function subtraction() {
-    if(number1.value =="" && number2.value ==""){
+    if(number1.value =="" || number2.value ==""){
         showAnswer.innerHTML = "Input a Number"
      } else{
     var firstNumber = Number(number1.value) 
@@ -25,7 +25,7 @@ function subtraction() {
 }
 
 function division() {
-    if(number1.value =="" && number2.value ==""){
+    if(number1.value =="" || number2.value ==""){
         showAnswer.innerHTML = "Input a Number"
      } else{
     var firstNumber = Number(number1.value) 
@@ -39,7 +39,7 @@ function division() {
 
 
 function multiplication() {
-    if(number1.value =="" && number2.value ==""){
+    if(number1.value =="" || number2.value ==""){
         showAnswer.innerHTML = "Input a Number"
      } else{
     var firstNumber = Number(number1.value) 
